@@ -41,7 +41,7 @@ let birdImage;
 let backgroundImage;
 let pipeColor = pipeStyles["green"];
 let currentPipeSkin = "green";
-let currentBirdSkin = "bird_red.png";
+let currentBirdSkin = "redBird.png";
 let currentBackgroundTheme = "sky_background.png";
 let isMusicPlaying = false;
 const groundColor = "#8B4513";
@@ -129,7 +129,7 @@ function resetAllTimeHighScore() {
 }
 
 function applySettings() {
-    currentBirdSkin = loadSetting(BIRD_SKIN_KEY, "bird_red.png");
+    currentBirdSkin = loadSetting(BIRD_SKIN_KEY, "redBird.png");
     currentBackgroundTheme = loadSetting(BACKGROUND_THEME_KEY, "sky_background.png");
     currentPipeSkin = loadSetting(PIPE_SKIN_KEY, "green");
     isMusicPlaying = loadSetting(MUSIC_SETTING_KEY, "true") === "true";
@@ -822,20 +822,20 @@ function checkAssetLoaded() {
     }
 }
 
-birdSkins["bird_red.png"] = new Image();
-birdSkins["bird_green.png"] = new Image();
-birdSkins["bird_blue.png"] = new Image();
+birdSkins["redBird.png"] = new Image();
+birdSkins["greenBird.png"] = new Image();
+birdSkins["blueBird.png"] = new Image();
 backgroundThemes["sky_background.png"] = new Image();
 backgroundThemes["city_background.png"] = new Image();
 backgroundThemes["night_background.png"] = new Image();
 
 const assets = [
-    { image: birdSkins["bird_red.png"], src: "bird_red.png" },
-    { image: birdSkins["bird_green.png"], src: "bird_green.png" },
-    { image: birdSkins["bird_blue.png"], src: "bird_blue.png" },
-    { image: backgroundThemes["sky_background.png"], src: "sky_background.png" },
-    { image: backgroundThemes["city_background.png"], src: "city_background.png" },
-    { image: backgroundThemes["night_background.png"], src: "night_background.png" }
+    { image: birdSkins["redBird.png"], src: "img/redBird.png" },
+    { image: birdSkins["greenBird.png"], src: "img/greenBird.png" },
+    { image: birdSkins["blueBird.png"], src: "img/blueBird.png" },
+    { image: backgroundThemes["sky_background.png"], src: "img/sky_background.png" },
+    { image: backgroundThemes["city_background.png"], src: "img/city_background.png" },
+    { image: backgroundThemes["night_background.png"], src: "img/night_background.png" }
 ];
 
 assets.forEach((asset) => {
@@ -996,9 +996,9 @@ window.addEventListener("load", function () {
     settingsButton.style.display = "block";
     featurePanel.style.display = 'none';
     birdSkinSelect.innerHTML = `
-    <option value="bird_red.png">Red Bird</option>
-    <option value="bird_green.png">Green Bird</option>
-    <option value="bird_blue.png">Blue Bird</option>
+    <option value="redBird.png">Red Bird</option>
+    <option value="greenBird.png">Green Bird</option>
+    <option value="blueBird.png">Blue Bird</option>
 `;
     backgroundSelect.innerHTML = `
     <option value="sky_background.png">Sky</option>
