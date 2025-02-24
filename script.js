@@ -830,12 +830,12 @@ backgroundThemes["city_background.png"] = new Image();
 backgroundThemes["night_background.png"] = new Image();
 
 const assets = [
-    { image: birdSkins["redBird.png"], src: "img/redBird.png" },
-    { image: birdSkins["greenBird.png"], src: "img/greenBird.png" },
-    { image: birdSkins["blueBird.png"], src: "img/blueBird.png" },
-    { image: backgroundThemes["sky_background.png"], src: "img/sky_background.png" },
-    { image: backgroundThemes["city_background.png"], src: "img/city_background.png" },
-    { image: backgroundThemes["night_background.png"], src: "img/night_background.png" }
+    { image: birdSkins["redBird.png"], src: "./img/redBird.png" },
+    { image: birdSkins["greenBird.png"], src: "./img/greenBird.png" },
+    { image: birdSkins["blueBird.png"], src: "./img/blueBird.png" },
+    { image: backgroundThemes["sky_background.png"], src: "./img/sky_background.png" },
+    { image: backgroundThemes["city_background.png"], src: "./img/city_background.png" },
+    { image: backgroundThemes["night_background.png"], src: "./img/night_background.png" }
 ];
 
 assets.forEach((asset) => {
